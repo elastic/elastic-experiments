@@ -8,3 +8,6 @@ All ingest experiments are included in the Jupyter Notebook.
   
 # Host and Machine Records
 All experiments are included in the Jupyter Notebook.  
+
+# Elastic Blogs Dataset
+The Elastic Blogs dataset is available as a download with the official Elasticsearch Engineer Course.  
