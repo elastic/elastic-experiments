@@ -6,8 +6,8 @@ import pytest
 es_host = 'localhost'
 es1_url = f'https://{es_host}:9200'
 es2_url = f'https://{es_host}:9201'
-es_password = 'elastic_playground'
-movies_file = '/Users/jesse.bacon/elasticsearch/data/movies.json'
+es_password = 'elastic_password'
+movies_file = 'data/movies.json'
 
 def get_es_instance():
     es = Elasticsearch(es1_url, 

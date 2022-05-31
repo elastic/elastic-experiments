@@ -5,9 +5,9 @@ import pytest
 
 container_host = 'localhost'
 elastic_user = 'elastic'
-elastic_password = 'elastic_playground'
+elastic_password = 'elastic_password'
 es1_url = f'https://{container_host}:9200'
-recipe_file = '/Users/jesse.bacon/elasticsearch/data/recipes.json'
+recipe_file = 'data/recipes.json'
 
 def get_es_instance():
     es = Elasticsearch(es1_url,

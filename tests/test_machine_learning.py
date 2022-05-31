@@ -6,7 +6,7 @@ warnings.filterwarnings("ignore")
 
 container_host = 'localhost'
 elastic_user = 'elastic'
-elastic_password = 'elastic_playground'
+elastic_password = 'elastic_password'
 es1_url = f'https://{container_host}:9200'
 
 def get_es_instance():
