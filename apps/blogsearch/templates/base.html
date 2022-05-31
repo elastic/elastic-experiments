@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="{{ url_for('static', filename='SpaceGrotesk.css') }}" rel="stylesheet">
+    <title>Elastic Blog Search Toy</title>
+    {% endblock %}
+
+  </head>
+  <body>
+    <style>
+    /* Style the navigation bar */
+    .navbar {
+      width: 100%;
+      background-color: white;
+      overflow: auto;
+    }
+
+    /* Navbar links */
+    .navbar a {
+      float: left;
+      text-align: center;
+      padding: 12px;
+      color: black;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+      background-color: lightpink;
+    }
+
+    /* Current/active navbar link */
+    .active {
+      background-color: lightblue;
+    }
+
+    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+      }
+    }
+    </style>
+    <!-- Load an icon library -->
+    <div id="content">
+      <div class="page relative mx-auto mxwg212 miwg212 px12 pgt24 pgb24">
+        <div class="navbar">
+          <a class="active" href="/"><i class=""></i> Home</a>
+          <a href="/assignments"><i class=""></i> Assignments</a>
+          <a style="align: right">Elasticsearch Blog Toy Application</a>
+        </div>
+        <div class="search_container">
+          <form name="form_input" action="/search" method="get">
+              <div class="search_container">
+                <a>Search Phrase</a>
+                <input id="phrase" type="text" name="phrase", class="search_box">
+              </div>
+          </form>
+        </div>
+        <style>
+          img{
+              max-width: 100%;
+              max-height: 100%;
+              display: block; /* remove extra space below image */
+          }
+        </style>
+        </br></br>
+        {% block content %}{% endblock %}
+        <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2022 by <a href="http://elastic.co/">Elasticsearch Company</a>.
+        {% endblock %}
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

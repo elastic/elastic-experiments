@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for record in records %}
+    <a href="/content/{{record['_id']}}"><b>{{ record['fields']['title'][0] }}</b></a></br>
+    <b>published:</b> {{ record['fields']['publish_date'][0]}}</br>
+    <p><b>tags:</b> {% for tag in  record['fields']['tags.use_case'] %}{{ tag }} {% endfor %}</p>
+    <p><b>companies:</b> {% for tag in record['fields']['authors.company.keyword']|unique %} {{ tag }} {% endfor %}</p>
+    <hr>
+{% endfor %}
+{% endblock %}

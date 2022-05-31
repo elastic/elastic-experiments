@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{data['_source']['title']}}</h1>
+{{data['_source']['content']|safe}}
+
+{% endblock %}

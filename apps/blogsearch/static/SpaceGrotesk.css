@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Grotesk Regular'), local('SpaceGrotesk-Regular'), url(/fonts/static/SpaceGrotesk-Regular.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Space Grotesk Medium'), local('SpaceGrotesk-Medium'), url(/fonts/static/SpaceGrotesk-Medium.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Space Grotesk Bold'), local('SpaceGrotesk-Bold'), url(/fonts/static/SpaceGrotesk-Bold.ttf) format('woff2');
+}
